@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.01.14 - 17.22.22.79204126700.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.01.14 - 17.22.22.79204750631.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.10 - 01.49.47.67204042231.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.10 - 01.49.47.67204236831.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.10 - 01.49.47.67205039796.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.10 - 01.49.47.67205049892.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.29 - 12.19.50.61203653607.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.29 - 12.19.50.61204035425.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.29 - 14.09.10.74203733219.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.29 - 14.09.10.74203925661.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.04.29 - 14.09.10.74205019398.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.07.17 - 16.41.19.52204805172.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.08.28 - 15.43.21.35205414230.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.09.01 - 20.47.29.67205206160.png" />
+    <Content Remove="wwwroot\Icon\Dota 2 Screenshot 2020.09.02 - 09.28.56.60205149795.png" />
+    <Content Remove="wwwroot\Image\knopka-1203152124.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Image\" />
+    <Folder Include="wwwroot\Icon\" />
+    <Folder Include="wwwroot\Photo\" />
+  </ItemGroup>
+
+
+
+</Project>
