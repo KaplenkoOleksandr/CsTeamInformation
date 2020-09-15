@@ -93,3 +93,11 @@ table {
     background-color: rgb(72, 72, 72);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
+
+a{
+    color:white;
+}
+    a:hover {
+        color: orange;
+        text-decoration: none;
+    }

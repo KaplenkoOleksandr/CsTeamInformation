@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace CsTeamInformation
 {
@@ -14,8 +15,11 @@ namespace CsTeamInformation
         }
 
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Icon { get; set; }
+        [Required]
         public int CorporationId { get; set; }
 
         [NotMapped]

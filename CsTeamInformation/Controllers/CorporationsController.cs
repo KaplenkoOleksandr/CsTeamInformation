@@ -62,16 +62,18 @@ namespace CsTeamInformation.Controllers
         {
             if (ModelState.IsValid)
             {
-                string wwwrootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(corporations.ImageFile.FileName);
-                string extension = Path.GetExtension(corporations.ImageFile.FileName);
-                corporations.Emblem = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                string path = Path.Combine(wwwrootPath + "/Image/", fileName);
-                using (var fileStream = new FileStream(path, FileMode.Create))
+                if (corporations.ImageFile != null)
                 {
-                    await corporations.ImageFile.CopyToAsync(fileStream);
+                    string wwwrootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(corporations.ImageFile.FileName);
+                    string extension = Path.GetExtension(corporations.ImageFile.FileName);
+                    corporations.Emblem = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwrootPath + "/Image/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await corporations.ImageFile.CopyToAsync(fileStream);
+                    }
                 }
-
 
                 _context.Add(corporations);
                 await _context.SaveChangesAsync();

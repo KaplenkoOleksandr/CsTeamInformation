@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace CsTeamInformation
 {
@@ -16,7 +17,9 @@ namespace CsTeamInformation
         }
 
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         [DisplayName("Emblem Name")]
         public string Emblem { get; set; }
 

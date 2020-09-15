@@ -23,6 +23,11 @@ namespace CsTeamInformation.Controllers
             return View();
         }
 
+        public IActionResult Dz()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

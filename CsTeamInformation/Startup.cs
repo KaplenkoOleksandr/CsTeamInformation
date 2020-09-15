@@ -55,7 +55,7 @@ namespace CsTeamInformation
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Corporations}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Dz}/{id?}");
             });
         }
     }
