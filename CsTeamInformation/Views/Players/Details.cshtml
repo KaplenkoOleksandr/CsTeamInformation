@@ -25,8 +25,8 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Photo)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Photo)
+        <dd class="col-sm-10">
+            <img src="@("~/Photo/" + @Html.ValueFor(model => model.Photo))" asp-append-version="true" width="250" height="315" />
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Team)
